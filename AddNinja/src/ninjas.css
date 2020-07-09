@@ -1,0 +1,113 @@
+body {
+  background: rgba(200, 243, 236, 0.561);
+  transition: all 1s;
+  width: 100%;
+}
+h1,
+p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.637);
+}
+
+form {
+  display: grid;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.678);
+  color: white;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "l1 l2 " "i1 i2 " "l3 l4" "i3 i4" "submit submit";
+  width: 25%;
+  grid-gap: 5px 15px;
+}
+
+form label,
+input {
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+form label:nth-of-type(1) {
+  grid-area: l1;
+}
+form label:nth-of-type(2) {
+  grid-area: l2;
+}
+form label:nth-of-type(3) {
+  grid-area: l3;
+}
+form label:nth-of-type(4) {
+  grid-area: l4;
+}
+
+form input:nth-of-type(1) {
+  grid-area: i1;
+}
+form input:nth-of-type(2) {
+  grid-area: i2;
+}
+form input:nth-of-type(3) {
+  grid-area: i3;
+}
+form input:nth-of-type(4) {
+  grid-area: i4;
+}
+
+form button {
+  display: grid;
+  grid-area: submit;
+  /* width: 100%; */
+}
+.ninja-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "n1 n2 n3" "n4 n5 n6" "n7 n8 n9";
+}
+.ninja {
+  margin: 0 auto;
+  display: grid;
+  width: 85%;
+  background: rgba(0, 0, 0, 0.678);
+  color: white;
+  padding: 15px;
+  margin-bottom: 2%;
+}
+.ninja:nth-of-type(1) {
+  grid-area: n1;
+}
+.ninja:nth-of-type(2) {
+  grid-area: n2;
+}
+.ninja:nth-of-type(3) {
+  grid-area: n3;
+}
+.ninja:nth-of-type(4) {
+  grid-area: n4;
+}
+.ninja:nth-of-type(5) {
+  grid-area: n5;
+}
+.ninja:nth-of-type(6) {
+  grid-area: n6;
+}
+.ninja:nth-of-type(7) {
+  grid-area: n7;
+}
+.ninja:nth-of-type(8) {
+  grid-area: n8;
+}
+.ninja:nth-of-type(9) {
+  grid-area: n9;
+}
+.ninja div {
+  border: 1px solid rgba(255, 255, 255, 0.733);
+  padding: 2%;
+}
+
+.ninja button {
+  margin: 0 auto;
+  width: 100%;
+}
